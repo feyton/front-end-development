@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <!-- Style links -->
+    <link rel="stylesheet" type="text/css" href="../style/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../style/style.css" />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="../style/fontawesome/css/all.css">
+    <!-- Jquery -->
+    <script src="../script/jquery-3.4.1.min.js"></script>
+    <script src="../script/jquery.min.js"></script>
+    <!-- bootstrap js -->
+    <script type="text/javascript" src="../style/Bootstrap/js/bootstrap.bundle.js"></script>
+
+    <!-- fontawesome scripts -->
+    <script defer src="../style/fontawesome/js/all.js"></script>
+    <!-- CUSTOM SCRIPT -->
+    <script type="text/javascript" src="../script/script.js"></script>
+    <link rel="stylesheet" href="admin.css" class="css">
+    <!-- icon and site title -->
+    <link rel="icon" type="image/gif" href="../images/profile.png" />
+    <title>Admin| Manage Post</title>
+
+
+</head>
+
+<body>
+    <header>
+        <i class="fa fa-bars menu-toggle" id="menu-show" onclick="menu_show()"></i>
+        <a href="../index.html"><img src="../images/fixed-logo.png" alt="logo" width="275" height="60"
+                class="fixed-logo"></a>
+        <ul class="nav-bar showing" id="nav-bar">
+            <li><a href="#"><i class="fas fa-user"></i>&nbsp;FEYTON <i class="fas fa-chevron-down"></i></a>
+                <ul>
+                    <li class="logout"><a href="#">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </header>
+
+    <div class="admin-page">
+        <!-- LEFT BAR -->
+        <div class="left-sidebar">
+            <ul>
+                <li><a href="#">Manage Posts</a></li>
+                <li><a href="#">Manage Users</a></li>
+                <li><a href="#">Manage Topics</a></li>
+            </ul>
+
+        </div>
+        <!-- // LEFT BAR -->
+        <div class="main-admin">
+            <div class="button-group">
+                <a href="create.html" class="btn btn-big">Add Post</a>
+            </div>
+
+            <div class="content">
+                <h2 class="page-title">Manage Post</h2>
+
+                <table>
+                    <thead>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th colspan="3">Action</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Prunus africana</td>
+                            <td>Fahrer</td>
+                            <td><a href="" class="edit">Edit</a></td>
+                            <td><a href="" class="delete">Delete</a></td>
+                            <td><a href="" class="publish">Publish</a></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Lorem ipsum elit. Nostrum, velit.</td>
+                            <td>Fahrer</td>
+                            <td><a href="" class="edit">Edit</a></td>
+                            <td><a href="" class="delete">Delete</a></td>
+                            <td><a href="" class="publish">Publish</a></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Prunus africana</td>
+                            <td>Feyton</td>
+                            <td><a href="" class="edit">Edit</a></td>
+                            <td><a href="" class="delete">Delete</a></td>
+                            <td><a href="" class="publish">Publish</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <!-- ADMIN SECTION -->
+        <!-- //ADMIN -->
+
+    </div>
+
+
+
+
+
+    <script>
+        var menu = document.getElementById("menu-show");
+        var nav = document.getElementById("nav-bar");
+
+        function menu_show() {
+            nav.classList.toggle('showing')
+        }
+    </script>
+</body>
+
+</html>
