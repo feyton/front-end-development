@@ -67,11 +67,11 @@
 		<div class="content clearfix">
 			<!-- MAIN PRODUCTS CONTAINER -->
 			<div class="main-content">
-				<div class="container mt-5">
+				<!-- <div class="container mt-5">
 					<div class="row">
-						<div class="col-md-12">SHOP &GT SEEDS &GT FORESTRY </div>
+						<div class="col-md-12">CATEGORY: FORESTRY </div>
 					</div>
-				</div>
+				</div> -->
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6">
@@ -89,55 +89,55 @@
 									data-slide="next"> <span class="carousel-control-next-icon"
 										aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
 							</div>
+							<div class="card"><button class="btn" onclick="show_card()" id="card_generator">Generate
+									Card</button></div>
 						</div>
 						<div class="col-md-6">
 							<div class="row">
 								<h2>Grevellia robusta</h2>
 							</div>
 							<div class="row">
-								<h1><i class="fa fa-inr"></i> 599 Rwf</h1>
-								&nbsp; &nbsp;
-								<h3><del>799 Rwf</del></h3>
-								&nbsp; &nbsp;
-								<h2 class="text-success">30% off</h2>
+								<h1 class="price">Rwf 25000</h1>
+							</div>
+							<!-- Species properties -->
+							<div class="row">
+								<p><i class="text-success fa fa-check-square"></i> <strong>Seeds/Kg:</strong> 89, 000
+									Seeds
+								</p>
 							</div>
 							<div class="row">
-								<h3 class="text-warning"><i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star-half" aria-hidden="true"></i>
-									<i class="fa fa-star-o" aria-hidden="true"></i></h3>
-								&nbsp; &nbsp;
-								<h5>250 reviews</h5>
+								<p><i class="text-success fa fa-check-square"></i> <strong>Germination rate:</strong>
+									89, 000
+									Seeds
+								</p>
 							</div>
 							<div class="row">
 								<p><i class="text-success fa fa-check-square"></i> <strong>Seeds/Kg:</strong> 89, 000
 									Seeds
 								</p>
 							</div>
+							<!-- // Species properties -->
 							<div class="row mt-4">
-								<h3 class="text-info"><i class="fa fa-map-marker"></i></h3>
-								<p style="font-size: 20px"> &nbsp; Today 23 Jul, Tuesday | &nbsp; <span
-										class="text-success">Available</span> </p>
+								<a href="">
+									<p style="font-size: 20px"> <i class="fa fa-map-marker"></i>&nbsp; Ruhande Butare
+									</p>
+								</a>
+							</div>
+							<div class="row">
+								<form action="">
+									<input type="number" placeholder="Quantity" class="quantity">
+								</form>
+								<a href="" class="btn-primary">Add to Cart</a>
 							</div>
 							<div class="row mt-4">
-								<h4>Your Location: &nbsp; &nbsp;</h4>
-								<div class="dropdown show"> <a class="btn btn-secondary dropdown-toggle" href="#"
-										role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-										aria-expanded="false"> District </a>
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-										<a class="dropdown-item" href="#">small</a>
-										<a class="dropdown-item" href="#">meduam </a>
-										<a class="dropdown-item" href="#">large</a>
-									</div>
+								<h4>Overview: &nbsp; &nbsp;</h4>
+								<div>
+									<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, ratione ad nulla
+										quae officiis maiores unde reprehenderit tempora repellat odio sequi ut minima
+										nihil sapiente veniam maxime alias. Ipsum, fuga.<a href="">Continue</a></p>
 								</div>
 							</div>
 
-
-							<div class="row mt-4">
-								<h4>From: &nbsp; &nbsp;</h4>
-								<p style="font-size: 18px">Arboretum de Ruhande </p>
-							</div>
 
 
 						</div>
@@ -147,21 +147,21 @@
 			<!-- Sidebar -->
 			<div class="sidebar">
 				<div class="section search">
-					<h2 class="section-title">Search</h2>
 					<form action="" method="post">
-						<input class="text-input" type="text-input" name="search" placeholder="Search product here..">
+						<div class="search-input">
+							<input class="text-input" type="text-input" name="search"
+								placeholder="Search product here..">
+							<button type="submit">Search</button>
+
+						</div>
 					</form>
 				</div>
 
 				<div class="section topics">
 					<h2 class="section-title">Categories</h2>
 					<ul>
-						<li><a href="#">Species</a></li>
-						<li><a href="#">Management</a></li>
-						<li><a href="#">Agroforestry</a></li>
-						<li><a href="#">Events</a></li>
-						<li><a href="#">News</a></li>
 						<li><a href="#">Forestry</a></li>
+						<li><a href="#">Agroforestry</a></li>
 					</ul>
 				</div>
 
@@ -199,54 +199,7 @@
 			<!-- //Product -->
 		</div>
 
-		<div class="container mt-5 mb-5">
-			<div class="row reviews">
-				<h2>Ratings & Reviews</h2>
-			</div>
-			<!-- REVIEW -->
-			<div class="row mt-5 mb-5">
-				<div class="media reviews">
-					<img class="mr-3" src="images/feyton.jpg" alt="Generic placeholder image" height="100" width="100">
-					<div class="media-body">
-						<h5 class="mt-0">Very nice product. <span class="text-warning"><i class="fa fa-star"
-									aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i
-									class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-half-o"
-									aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </span></h5>
-						Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
-						purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
-						vulputate fringilla. Donec lacinia congue felis in faucibus.
-					</div>
-				</div>
-			</div>
-			<!-- //REVIEW -->
 
-			
-			</div>
-
-			<div class="row mb-5 reviews">
-				<h2> Post Your Own Reviews</h2>
-			</div>
-			<form method="post" class="reviews">
-				<div class="form-group">
-					<label for="exampleInputEmail1">Email address</label>
-					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-						placeholder="Enter email">
-					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-						else.</small>
-				</div>
-				<div class="form-group">
-					<label for="exampleInputPassword1">Review</label>
-					<textarea type="text" class="form-control" id="exampleInputtextarea"
-						placeholder="Write your own reviews" rows="3"></textarea>
-				</div>
-				<div class="form-check">
-					<input type="checkbox" class="form-check-input reviews" id="exampleCheck1">
-					<label class="form-check-label" for="exampleCheck1">Check me out</label>
-				</div>
-				<button type="submit" class="btn btn-primary reviews">Submit</button>
-			</form>
-
-		</div>
 		<!-- //content -->
 
 
