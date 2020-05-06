@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <!-- Style links -->
+    <link rel="stylesheet" type="text/css" href="../style/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../style/style.css" />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="../style/fontawesome/css/all.css">
+    <!-- Jquery -->
+    <script src="../script/jquery-3.4.1.min.js"></script>
+    <script src="../script/jquery.min.js"></script>
+    <!-- bootstrap js -->
+    <script type="text/javascript" src="../style/Bootstrap/js/bootstrap.bundle.js"></script>
+
+    <!-- fontawesome scripts -->
+    <script defer src="../style/fontawesome/js/all.js"></script>
+    <!-- CUSTOM SCRIPT -->
+    <script type="text/javascript" src="../script/script.js"></script>
+    <link rel="stylesheet" href="admin.css" class="css">
+    <!-- icon and site title -->
+    <link rel="icon" type="image/gif" href="../images/profile.png" />
+    <title>Checkout | Store</title>
+
+
+</head>
+
+<body>
+    <div class="container">
+    <header>
+        <a href="../index.html"><img src="../images/fixed-logo.png" alt="logo" width="275" height="60"
+                class="fixed-logo"></a>
+        <i class="fa fa-bars menu-toggle" id="menu-show" onclick="menu_show()"></i>
+        <!-- <i class="fas fa-window-close menu-toggle" id="menu-close" onclick="menu_hide()"></i> -->
+        <ul class="nav-bar showing" id="nav-bar">
+            <li class="active-nav"><a href="../index.html">HOME</a></li>
+            <li><a href="../forestry.html">FORESTRY&nbsp;<i class="fas fa-chevron-down"></i></a>
+                <ul>
+                    <li><a href="#">Calculator</a></li>
+                    <li><a href="#">Species</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </li>
+            <li><a href="../store.html">STORE</a>
+                <ul>
+                    <li><a href="order-summary.html">Cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fas fa-user"></i>&nbsp;FEYTON <i class="fas fa-chevron-down"></i></a>
+                <ul>
+                    <li><a href="#">Dashboard</a> </li>
+                    <li class="logout"><a href="#">Logout</a></li>
+                </ul>
+            </li>
+            <!-- <li style="position:absolute; float:right; right:0px">><a href="registration.html">ACCOUNT</a></li> -->
+        </ul>
+
+    </header>
+    <div class="check-out">
+        <a href="payment.html">Checkout</a>
+    </div>
+</div>
+    <script>
+        var menu = document.getElementById("menu-show");
+        var nav = document.getElementById("nav-bar");
+
+        function menu_show() {
+            nav.classList.toggle('showing')
+        }
+    </script>
+</body>
+
+</html>

@@ -22,6 +22,7 @@
 	<script defer src="style/fontawesome/js/all.js"></script>
 	<!-- CUSTOM SCRIPT -->
 	<script type="text/javascript" src="script/script.js"></script>
+	<link rel="stylesheet" href="style/forestry.css" class="css">
 	<!-- icon and site title -->
 	<link rel="icon" type="image/gif" href="images/profile.png" />
 	<title>Igiti Corp</title>
@@ -35,6 +36,12 @@
 	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0">
 	</script>
 	<!-- End -->
+
+	<div class="notification box-color " id="notification">
+		<p>Your account has been created successfully</p>
+		<!-- <p>Your account has been created successfully</p> -->
+		<div class="progress"></div>
+	</div>
 	<div class="container">
 		<header>
 			<a href="index.html"><img src="images/fixed-logo.png" alt="logo" width="275" height="60"
@@ -50,7 +57,12 @@
 						<li><a href="#">Events</a></li>
 					</ul>
 				</li>
-				<li><a href="store.html">STORE</a></li>
+				<li><a href="store.html">STORE</a>
+                    <ul>
+                        <li><a href="store/order-summary.html">Cart</a></li>
+                        <li><a href="store/checkout.html">Checkout</a></li>
+                    </ul>
+                </li>
 				<li><a href="#"><i class="fas fa-user"></i>&nbsp;FEYTON <i class="fas fa-chevron-down"></i></a>
 					<ul>
 						<li><a href="#">Dashboard</a> </li>
@@ -257,6 +269,88 @@
 			</div>
 		</div>
 		<!-- End popular -->
+
+
+		<!-- Content -->
+        <div class="content clearfix">
+            <div class="main-content">
+                <h1 class="trending-post-title">Trending Posts</h1>
+                <!-- Trending post -->
+                <div class="trending-post clearfix">
+                    <img src="images/products/destination_3.jpg" alt="" class="post-image">
+                    <div class="post-preview">
+                        <h2><a href="single.html">Welcome to igiti corp, we got you covered........</a></h2>
+                        <i class="far fa-user"></i>&nbsp;<span>Feyton</span> &nbsp;<i
+                            class="far fa-calendar"></i>&nbsp;<span>25 June 2020</span>
+                        <p class="preview-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere
+                            erat nec massa tristique mattis. emper, consequat augue.</p>
+                        <a href="single.html" class="btn readmore">Read More</a>
+                    </div>
+                </div>
+                <!-- Trending post -->
+                <div class="trending-post clearfix">
+                    <img src="images/products/destination_3.jpg" alt="" class="post-image">
+                    <div class="post-preview">
+                        <h2><a href="single.html">Welcome to igiti corp, we got you covered........</a></h2>
+                        <i class="fas fa-user"></i>&nbsp;<span>Feyton</span> &nbsp;<i class="fas fa-calendar"></i>
+                        <p class="preview-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere
+                            erat nec massa tristique mattis. emper, consequat augue.</p>
+                        <a href="single.html" class="btn readmore">Read More</a>
+                    </div>
+                </div>
+                <!-- Trending post -->
+                <div class="trending-post clearfix">
+                    <img src="images/products/destination_3.jpg" alt="" class="post-image">
+                    <div class="post-preview">
+                        <h2><a href="single.html">Welcome to igiti corp, we got you covered........</a></h2>
+                        <i class="fas fa-user"></i>&nbsp;<span>Feyton</span> &nbsp;<i class="fas fa-calendar"></i>
+                        <p class="preview-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere
+                            erat nec massa tristique mattis. emper, consequat augue.</p>
+                        <a href="single.html" class="btn readmore">Read More</a>
+                    </div>
+                </div>
+                <!-- Trending post -->
+                <div class="trending-post clearfix">
+                    <img src="images/products/destination_3.jpg" alt="" class="post-image">
+                    <div class="post-preview">
+                        <h2><a href="single.html">Welcome to igiti corp, we got you covered........</a></h2>
+                        <i class="fas fa-user"></i>&nbsp;<span>Feyton</span> &nbsp;<i class="far fa-calendar"></i>
+                        <p class="preview-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere
+                            erat nec massa tristique mattis. emper, consequat augue.</p>
+                        <a href="single.html" class="btn readmore">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="section search">
+                    <h2 class="section-title">Search</h2>
+                    <form action="" method="post">
+                        <input class="text-input" type="text-input" name="search" placeholder="Search...">
+                    </form>
+                </div>
+
+                <div class="section topics">
+                    <h2 class="section-title">Categories</h2>
+                    <ul>
+                        <li><a href="#">Species</a></li>
+                        <li><a href="#">Management</a></li>
+                        <li><a href="#">Agroforestry</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Forestry</a></li>
+                    </ul>
+                </div>
+                <div class="section twitter">
+                    <a class="twitter-timeline" data-height="400"
+                        href="https://twitter.com/igiticorp?ref_src=twsrc%5Etfw">Tweets by igiticorp</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+
+            </div>
+            <!-- //SIDEBAR -->
+        </div>
+        <!-- //content -->
 		<!-- News -->
 
 		<div class="news" id="news">
@@ -424,6 +518,9 @@
 	function menu_show() {
 		nav.classList.toggle('showing')
 	}
+
+	var notification = document.getElementById("notification");
+	setTimeout(function() { notification.classList.toggle('box-active'); }, 2000);
 </script>
 </body>
 

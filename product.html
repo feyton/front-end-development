@@ -23,6 +23,7 @@
 	<script defer src="style/fontawesome/js/all.js"></script>
 	<!-- CUSTOM SCRIPT -->
 	<script type="text/javascript" src="script/script.js"></script>
+	<link rel="stylesheet" href="product.css" class="css">
 	<!-- icon and site title -->
 	<link rel="icon" type="image/gif" href="images/profile.png" />
 	<title>Igiti Corp</title>
@@ -80,7 +81,7 @@
 									<div class="carousel-item active"> <img class="d-block w-100"
 											src="images/products/destination_2.jpg" alt="First slide"> </div>
 									<div class="carousel-item"> <img class="d-block w-100"
-											src="images/products/destination_1.jpg" alt="Second slide"> </div>
+											src="images/Eucalyptus_maculata.jpg" alt="Second slide"> </div>
 								</div>
 								<a class="carousel-control-prev" href="#carouselExampleControls" role="button"
 									data-slide="prev"> <span class="carousel-control-prev-icon"
@@ -89,8 +90,18 @@
 									data-slide="next"> <span class="carousel-control-next-icon"
 										aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
 							</div>
-							<div class="card"><button class="btn" onclick="show_card()" id="card_generator">Generate
-									Card</button></div>
+							<div class="row md-12 ml-10">
+								<h4>Overview:</h4>
+
+								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, ratione ad nulla
+									quae officiis maiores unde reprehenderit tempora repellat odio sequi ut minima
+									nihil sapiente veniam maxime alias. Ipsum, fuga...<strong>Readmore, generate a
+										card
+										for the product.</strong></p>
+								<a href="" class="btn card">Generate a card for this product</a>
+
+							</div>
+
 						</div>
 						<div class="col-md-6">
 							<div class="row">
@@ -117,27 +128,19 @@
 								</p>
 							</div>
 							<!-- // Species properties -->
-							<div class="row mt-4">
-								<a href="">
-									<p style="font-size: 20px"> <i class="fa fa-map-marker"></i>&nbsp; Ruhande Butare
-									</p>
-								</a>
-							</div>
 							<div class="row">
 								<form action="">
-									<input type="number" placeholder="Quantity" class="quantity">
+									<div class="quantity buttons_added" data-children-count="1"><a
+											href="javascript:void(0)" class="minus">-</a>
+										<input type="text" id="quantity_5ea093f3a2b82" class="input-text qty text"
+											step="1" min="1" max="" name="quantity" value="1" title="Qty" size="4"
+											placeholder="" inputmode="numeric">
+										<a href="" class="plus">+</a>
+									</div>
+									<input type="submit" value="Add to Cart" class="add-cart">
 								</form>
-								<a href="" class="btn-primary">Add to Cart</a>
-							</div>
-							<div class="row mt-4">
-								<h4>Overview: &nbsp; &nbsp;</h4>
-								<div>
-									<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, ratione ad nulla
-										quae officiis maiores unde reprehenderit tempora repellat odio sequi ut minima
-										nihil sapiente veniam maxime alias. Ipsum, fuga.<a href="">Continue</a></p>
-								</div>
-							</div>
 
+							</div>
 
 
 						</div>
@@ -158,11 +161,39 @@
 				</div>
 
 				<div class="section topics">
-					<h2 class="section-title">Categories</h2>
-					<ul>
-						<li><a href="#">Forestry</a></li>
-						<li><a href="#">Agroforestry</a></li>
-					</ul>
+					<h2 class="section-title text-center">What's new!!!</h2>
+					<div class="post-popular clearfix">
+						<img src="images/products/prunus_africana.png" alt="" height="100px" width="90px">
+						<a href="single.html" class="title">
+							<h4>Grevillia robusta</h4>
+							<h6>25000 Frw</h6>
+						</a>
+
+					</div>
+					<div class="post-popular clearfix">
+						<img src="images/products/prunus_africana.png" alt="" height="100px" width="90px">
+						<a href="single.html" class="title">
+							<h4>Best tree management practices</h4>
+						</a>
+					</div>
+					<div class="post-popular clearfix">
+						<img src="images/products/prunus_africana.png" alt="" height="100px" width="90px">
+						<a href="single.html" class="title">
+							<h4>Best tree management practices</h4>
+						</a>
+					</div>
+					<div class="post-popular clearfix">
+						<img src="images/products/prunus_africana.png" alt="" height="100px" width="90px">
+						<a href="single.html" class="title">
+							<h4>Best tree management practices</h4>
+						</a>
+					</div>
+					<div class="post-popular clearfix">
+						<img src="images/products/prunus_africana.png" alt="">
+						<a href="single.html" class="title">
+							<h4>Best tree management practices</h4>
+						</a>
+					</div>
 				</div>
 
 			</div>

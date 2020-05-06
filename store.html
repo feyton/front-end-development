@@ -21,7 +21,10 @@
 
 	<!-- fontawesome scripts -->
 	<script defer src="style/fontawesome/js/all.js"></script>
+	<script src="plugins/slick.min.js"></script>
 	<!-- CUSTOM SCRIPT -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700,900" rel="stylesheet">
+
 	<script type="text/javascript" src="script/script.js"></script>
 	<!-- icon and site title -->
 	<link rel="icon" type="image/gif" href="images/profile.png" />
@@ -63,226 +66,259 @@
 
 		</header>
 
-			<div class="row destinations_row">
-				<div class="col">
 
-				<!-- Product -->
-				<div class="destination item">
-					<div class="product-grid">
-						<div class="product-image">
-							<a href="product.html">
-								<img class="pic-1" src="images/products/slide1.jpg" alt="">
-								<img class="pic-2" src="images/products/prunus_africana.png" alt="">
-							</a>
-							<span class="product-trend-label">RECOMMENDED</span>
-							<span class="product-discount-label">20%</span>
-							<ul class="image-link">
-								<li><a data-tip="Add to Cart" href=""><i class="fa fa-shopping-cart"></i></a></li>
-								<li><a data-tip="Wishlist" href=""><i class="fa fa-heart"></i></a></li>
-								<li><a data-tip="Compare" href=""><i class="fa fa-random"></i></a></li>
-								<li><a data-tip="Quick View" href="product.html"><i class="fa fa-search"></i></a></li>
-							</ul>
+		<!-- RECENT POST SLIDER -->
+		<div class="post-slider">
+			<i class="fas fa-chevron-left prev" id="prev"></i>
+			<i class="fas fa-chevron-right next" id="next"></i>
+			<div class="product-wrapper" dir="rtl">
+
+				<!-- Post -->
+
+				<div class="post">
+					<!-- <div class="post-img" style="background-image: url(images/products/prunus_africana.png);"></div> -->
+					<div class="product-info" style="background-image: url(images/products/prunus_africana.png);">
+						<div class="name">
+							<h1>Eucalyptus maculata</h1>
 						</div>
-						<div class="product-content">
-							<h3 class="title"> <a href="product.html">Grevillia robusta</a> </h3>
-							<div class="price">Rwf 25,000</div>
-						</div>
+						<p>Lorem ipsum dolor sit amet</p>
+						<p>Lorem ipsum dolor sit gdgdfhfgfgamet</p>
+
+						<a href="" class="cart-button">Add to cart</a>
+						<a href="" class="view-button">Quick View</a>
 
 					</div>
-
 				</div>
-				<!-- //Product -->
-
-				<!-- Product -->
-				<div class="destination item">
-					<div class="product-grid">
-						<div class="product-image">
-							<a href="">
-								<img class="pic-1" src="images/products/destination_1.jpg" alt="">
-								<img class="pic-2" src="images/products/destination_2.jpg" alt="">
-							</a>
-							<span class="product-trend-label">RECOMMENDED</span>
-							<span class="product-discount-label">20%</span>
-							<ul class="image-link">
-								<li><a data-tip="Add to Cart" href=""><i class="fa fa-shopping-cart"></i></a></li>
-								<li><a data-tip="Wishlist" href=""><i class="fa fa-heart"></i></a></li>
-								<li><a data-tip="Compare" href=""><i class="fa fa-random"></i></a></li>
-								<li><a data-tip="Quick View" href=""><i class="fa fa-search"></i></a></li>
-							</ul>
-						</div>
-						<div class="product-content">
-							<h3 class="title"> <a href="">Grevillia robusta</a> </h3>
-							<div class="price">Rwf 25,000</div>
-						</div>
-
-					</div>
-
-				</div>
-				<!-- //Product -->
-				<!-- Product -->
-				<div class="destination item">
-					<div class="product-grid">
-						<div class="product-image">
-							<a href="">
-								<img class="pic-1" src="images/products/destination_1.jpg" alt="">
-								<img class="pic-2" src="images/products/destination_2.jpg" alt="">
-							</a>
-							<span class="product-trend-label">RECOMMENDED</span>
-							<span class="product-discount-label">20%</span>
-							<ul class="image-link">
-								<li><a data-tip="Add to Cart" href=""><i class="fa fa-shopping-cart"></i></a></li>
-								<li><a data-tip="Wishlist" href=""><i class="fa fa-heart"></i></a></li>
-								<li><a data-tip="Compare" href=""><i class="fa fa-random"></i></a></li>
-								<li><a data-tip="Quick View" href=""><i class="fa fa-search"></i></a></li>
-							</ul>
-						</div>
-						<div class="product-content">
-							<h3 class="title"> <a href="">Grevillia robusta</a> </h3>
-							<div class="price">Rwf 25,000</div>
-						</div>
-
-					</div>
-
-				</div>
-				<!-- //Product -->
-				<!-- Product -->
-				<div class="destination item">
-					<div class="product-grid">
-						<div class="product-image">
-							<a href="">
-								<img class="pic-1" src="images/products/destination_1.jpg" alt="">
-								<img class="pic-2" src="images/products/destination_2.jpg" alt="">
-							</a>
-							<span class="product-trend-label">RECOMMENDED</span>
-							<span class="product-discount-label">20%</span>
-							<ul class="image-link">
-								<li><a data-tip="Add to Cart" href=""><i class="fa fa-shopping-cart"></i></a></li>
-								<li><a data-tip="Wishlist" href=""><i class="fa fa-heart"></i></a></li>
-								<li><a data-tip="Compare" href=""><i class="fa fa-random"></i></a></li>
-								<li><a data-tip="Quick View" href=""><i class="fa fa-search"></i></a></li>
-							</ul>
-						</div>
-						<div class="product-content">
-							<h3 class="title"> <a href="">Grevillia robusta</a> </h3>
-							<div class="price">Rwf 25,000</div>
-						</div>
-
-					</div>
-
-				</div>
-				<!-- //Product -->
-				<!-- Product -->
-				<div class="destination item">
-					<div class="product-grid">
-						<div class="product-image">
-							<a href="">
-								<img class="pic-1" src="images/products/destination_1.jpg" alt="">
-								<img class="pic-2" src="images/products/destination_2.jpg" alt="">
-							</a>
-							<span class="product-trend-label">RECOMMENDED</span>
-							<span class="product-discount-label">20%</span>
-							<ul class="image-link">
-								<li><a data-tip="Add to Cart" href=""><i class="fa fa-shopping-cart"></i></a></li>
-								<li><a data-tip="Wishlist" href=""><i class="fa fa-heart"></i></a></li>
-								<li><a data-tip="Compare" href=""><i class="fa fa-random"></i></a></li>
-								<li><a data-tip="Quick View" href=""><i class="fa fa-search"></i></a></li>
-							</ul>
-						</div>
-						<div class="product-content">
-							<h3 class="title"> <a href="">Grevillia robusta</a> </h3>
-							<div class="price">Rwf 25,000</div>
-						</div>
-
-					</div>
-
-				</div>
-				<!-- //Product -->
-				<!-- Product -->
-				<div class="destination item">
-					<div class="product-grid">
-						<div class="product-image">
-							<a href="">
-								<img class="pic-1" src="images/products/destination_1.jpg" alt="">
-								<img class="pic-2" src="images/products/destination_2.jpg" alt="">
-							</a>
-							<span class="product-trend-label">RECOMMENDED</span>
-							<span class="product-discount-label">20%</span>
-							<ul class="image-link">
-								<li><a data-tip="Add to Cart" href=""><i class="fa fa-shopping-cart"></i></a></li>
-								<li><a data-tip="Wishlist" href=""><i class="fa fa-heart"></i></a></li>
-								<li><a data-tip="Compare" href=""><i class="fa fa-random"></i></a></li>
-								<li><a data-tip="Quick View" href=""><i class="fa fa-search"></i></a></li>
-							</ul>
-						</div>
-						<div class="product-content">
-							<h3 class="title"> <a href="">Grevillia robusta</a> </h3>
-							<div class="price">Rwf 25,000</div>
-						</div>
-
-					</div>
-
-				</div>
-				<!-- //Product -->
-	
-				</div>
+				<!-- End-post -->
+			
 			</div>
-
-
-
-
-		<!-- Footer -->
-		<footer>
-			<div class="footer-content">
-				<div class="footer-section about">
-					<h1 class="logo-text"><span>Igiti</span>&nbsp;Corp</h1>
-					<br>
-					<p>Igiti Corp is an organization aiming to ensure sustainable management of forestry resources,
-						distribution and access to forestry information.</p>
-					<div class="contact">
-						<span><i class="fas fa-phone"></i>&nbsp;+25078724147</span>
-						<span><i class="fas fa-envelope"></i>&nbsp;info@igiti.co.rw</span>
-					</div>
-					<div class="social">
-						<a href="https://www.facebook.com/igiticorp/"><i class="fab fa-facebook"></i></a>
-						<a href="https://twitter.com/igiticorp"><i class="fab fa-twitter"></i></a>
-						<a href="#"><i class="fab fa-youtube"></i></a>
-					</div>
-				</div>
-				<div class="footer-section links">
-					<h2>Quick Links</h2>
-					<br>
-					<ul>
-						<li><a href="forestry.html"><i class="fas fa-link"></i>&nbsp;Forestry</a></li>
-
-						<li><a href="#"><i class="fas fa-link"></i>&nbsp;Events</a></li>
-
-						<li><a href="#"><i class="fas fa-link"></i>&nbsp;Calculator</a></li>
-
-						<li><a href="about.html"><i class="fas fa-link"></i>&nbsp;About Us</a></li>
-
-						<li><a href="terms.html"><i class="fas fa-link"></i>&nbsp;Terms and Conditions</a></li>
-
-						<li><a href="privacy.html"><i class="fas fa-link"></i>&nbsp;Privacy Policy</a></li>
-					</ul>
-				</div>
-				<div class="footer-section contact">
-					<h2>Join Our Database</h2>
-					<br>
-					<form action="subscribe" method="post" class="contact-form">
-						<input type="text" name="name" placeholder="Full Name..." class="text-input contact-input">
-						<input type="email" name="email" placeholder="E-mail..." class="text-input contact-input">
-						<button type="submit" class="btn btn-big contact-btn"><i
-								class="far fa-paper-plane"></i>&nbsp;Join</button>
-					</form>
-				</div>
-			</div>
-			<div class="footer-bottom">
-				&copy; Igiti Corp | Powered by Feyton Inc
-			</div>
-		</footer>
-		<!-- end footer -->
+		</div>
 	</div>
+	<!-- END RECENT POST -->
+
+
+
+
+	<div class="row destinations_row">
+		<div class="col">
+
+			<!-- Product -->
+			<div class="destination item">
+				<div class="product-grid">
+					<div class="product-image">
+						<a href="product.html">
+							<img class="pic-1" src="images/products/slide1.jpg" alt="">
+							<img class="pic-2" src="images/products/prunus_africana.png" alt="">
+						</a>
+						<span class="product-trend-label">RECOMMENDED</span>
+						<span class="product-discount-label">20%</span>
+						<ul class="image-link">
+							<li><a data-tip="Add to Cart" href=""><i class="fa fa-shopping-cart"></i></a></li>
+							<li><a data-tip="Wishlist" href=""><i class="fa fa-heart"></i></a></li>
+							<li><a data-tip="Compare" href=""><i class="fa fa-random"></i></a></li>
+							<li><a data-tip="Quick View" href="product.html"><i class="fa fa-search"></i></a></li>
+						</ul>
+					</div>
+					<div class="product-content">
+						<h3 class="title"> <a href="product.html">Grevillia robusta</a> </h3>
+						<div class="price">Rwf 25,000</div>
+					</div>
+
+				</div>
+
+			</div>
+			<!-- //Product -->
+
+			<!-- Product -->
+			<div class="destination item">
+				<div class="product-grid">
+					<div class="product-image">
+						<a href="">
+							<img class="pic-1" src="images/products/destination_1.jpg" alt="">
+							<img class="pic-2" src="images/products/destination_2.jpg" alt="">
+						</a>
+						<span class="product-trend-label">RECOMMENDED</span>
+						<span class="product-discount-label">20%</span>
+						<ul class="image-link">
+							<li><a data-tip="Add to Cart" href=""><i class="fa fa-shopping-cart"></i></a></li>
+							<li><a data-tip="Wishlist" href=""><i class="fa fa-heart"></i></a></li>
+							<li><a data-tip="Compare" href=""><i class="fa fa-random"></i></a></li>
+							<li><a data-tip="Quick View" href=""><i class="fa fa-search"></i></a></li>
+						</ul>
+					</div>
+					<div class="product-content">
+						<h3 class="title"> <a href="">Grevillia robusta</a> </h3>
+						<div class="price">Rwf 25,000</div>
+					</div>
+
+				</div>
+
+			</div>
+			<!-- //Product -->
+			<!-- Product -->
+			<div class="destination item">
+				<div class="product-grid">
+					<div class="product-image">
+						<a href="">
+							<img class="pic-1" src="images/products/destination_1.jpg" alt="">
+							<img class="pic-2" src="images/products/destination_2.jpg" alt="">
+						</a>
+						<span class="product-trend-label">RECOMMENDED</span>
+						<span class="product-discount-label">20%</span>
+						<ul class="image-link">
+							<li><a data-tip="Add to Cart" href=""><i class="fa fa-shopping-cart"></i></a></li>
+							<li><a data-tip="Wishlist" href=""><i class="fa fa-heart"></i></a></li>
+							<li><a data-tip="Compare" href=""><i class="fa fa-random"></i></a></li>
+							<li><a data-tip="Quick View" href=""><i class="fa fa-search"></i></a></li>
+						</ul>
+					</div>
+					<div class="product-content">
+						<h3 class="title"> <a href="">Grevillia robusta</a> </h3>
+						<div class="price">Rwf 25,000</div>
+					</div>
+
+				</div>
+
+			</div>
+			<!-- //Product -->
+			<!-- Product -->
+			<div class="destination item">
+				<div class="product-grid">
+					<div class="product-image">
+						<a href="">
+							<img class="pic-1" src="images/products/destination_1.jpg" alt="">
+							<img class="pic-2" src="images/products/destination_2.jpg" alt="">
+						</a>
+						<span class="product-trend-label">RECOMMENDED</span>
+						<span class="product-discount-label">20%</span>
+						<ul class="image-link">
+							<li><a data-tip="Add to Cart" href=""><i class="fa fa-shopping-cart"></i></a></li>
+							<li><a data-tip="Wishlist" href=""><i class="fa fa-heart"></i></a></li>
+							<li><a data-tip="Compare" href=""><i class="fa fa-random"></i></a></li>
+							<li><a data-tip="Quick View" href=""><i class="fa fa-search"></i></a></li>
+						</ul>
+					</div>
+					<div class="product-content">
+						<h3 class="title"> <a href="">Grevillia robusta</a> </h3>
+						<div class="price">Rwf 25,000</div>
+					</div>
+
+				</div>
+
+			</div>
+			<!-- //Product -->
+			<!-- Product -->
+			<div class="destination item">
+				<div class="product-grid">
+					<div class="product-image">
+						<a href="">
+							<img class="pic-1" src="images/products/destination_1.jpg" alt="">
+							<img class="pic-2" src="images/products/destination_2.jpg" alt="">
+						</a>
+						<span class="product-trend-label">RECOMMENDED</span>
+						<span class="product-discount-label">20%</span>
+						<ul class="image-link">
+							<li><a data-tip="Add to Cart" href=""><i class="fa fa-shopping-cart"></i></a></li>
+							<li><a data-tip="Wishlist" href=""><i class="fa fa-heart"></i></a></li>
+							<li><a data-tip="Compare" href=""><i class="fa fa-random"></i></a></li>
+							<li><a data-tip="Quick View" href=""><i class="fa fa-search"></i></a></li>
+						</ul>
+					</div>
+					<div class="product-content">
+						<h3 class="title"> <a href="">Grevillia robusta</a> </h3>
+						<div class="price">Rwf 25,000</div>
+					</div>
+
+				</div>
+
+			</div>
+			<!-- //Product -->
+			<!-- Product -->
+			<div class="destination item">
+				<div class="product-grid">
+					<div class="product-image">
+						<a href="">
+							<img class="pic-1" src="images/products/destination_1.jpg" alt="">
+							<img class="pic-2" src="images/products/destination_2.jpg" alt="">
+						</a>
+						<span class="product-trend-label">RECOMMENDED</span>
+						<span class="product-discount-label">20%</span>
+						<ul class="image-link">
+							<li><a data-tip="Add to Cart" href=""><i class="fa fa-shopping-cart"></i></a></li>
+							<li><a data-tip="Wishlist" href=""><i class="fa fa-heart"></i></a></li>
+							<li><a data-tip="Compare" href=""><i class="fa fa-random"></i></a></li>
+							<li><a data-tip="Quick View" href=""><i class="fa fa-search"></i></a></li>
+						</ul>
+					</div>
+					<div class="product-content">
+						<h3 class="title"> <a href="">Grevillia robusta</a> </h3>
+						<div class="price">Rwf 25,000</div>
+					</div>
+
+				</div>
+
+			</div>
+			<!-- //Product -->
+
+		</div>
 	</div>
+
+
+
+
+	<!-- Footer -->
+	<footer>
+		<div class="footer-content">
+			<div class="footer-section about">
+				<h1 class="logo-text"><span>Igiti</span>&nbsp;Corp</h1>
+				<br>
+				<p>Igiti Corp is an organization aiming to ensure sustainable management of forestry resources,
+					distribution and access to forestry information.</p>
+				<div class="contact">
+					<span><i class="fas fa-phone"></i>&nbsp;+25078724147</span>
+					<span><i class="fas fa-envelope"></i>&nbsp;info@igiti.co.rw</span>
+				</div>
+				<div class="social">
+					<a href="https://www.facebook.com/igiticorp/"><i class="fab fa-facebook"></i></a>
+					<a href="https://twitter.com/igiticorp"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-youtube"></i></a>
+				</div>
+			</div>
+			<div class="footer-section links">
+				<h2>Quick Links</h2>
+				<br>
+				<ul>
+					<li><a href="forestry.html"><i class="fas fa-link"></i>&nbsp;Forestry</a></li>
+
+					<li><a href="#"><i class="fas fa-link"></i>&nbsp;Events</a></li>
+
+					<li><a href="#"><i class="fas fa-link"></i>&nbsp;Calculator</a></li>
+
+					<li><a href="about.html"><i class="fas fa-link"></i>&nbsp;About Us</a></li>
+
+					<li><a href="terms.html"><i class="fas fa-link"></i>&nbsp;Terms and Conditions</a></li>
+
+					<li><a href="privacy.html"><i class="fas fa-link"></i>&nbsp;Privacy Policy</a></li>
+				</ul>
+			</div>
+			<div class="footer-section contact">
+				<h2>Join Our Database</h2>
+				<br>
+				<form action="subscribe" method="post" class="contact-form">
+					<input type="text" name="name" placeholder="Full Name..." class="text-input contact-input">
+					<input type="email" name="email" placeholder="E-mail..." class="text-input contact-input">
+					<button type="submit" class="btn btn-big contact-btn"><i
+							class="far fa-paper-plane"></i>&nbsp;Join</button>
+				</form>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			&copy; Igiti Corp | Powered by Feyton Inc
+		</div>
+	</footer>
+	<!-- end footer -->
+	</div>
+	<script src="script/store.js"></script>
 
 	<script>
 		var menu = document.getElementById("menu-show");

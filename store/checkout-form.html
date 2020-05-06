@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <!-- Style links -->
+    <link rel="stylesheet" type="text/css" href="../style/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../style/style.css" />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="../style/fontawesome/css/all.css">
+    <!-- Jquery -->
+    <script src="../script/jquery-3.4.1.min.js"></script>
+    <script src="../script/jquery.min.js"></script>
+    <!-- bootstrap js -->
+    <script type="text/javascript" src="../style/Bootstrap/js/bootstrap.bundle.js"></script>
+
+    <!-- fontawesome scripts -->
+    <script defer src="../style/fontawesome/js/all.js"></script>
+    <!-- CUSTOM SCRIPT -->
+    <!-- <script type="text/javascript" src="../script/script.js"></script> -->
+
+
+
+    <!-- PAGE STYLE -->
+    <link rel="stylesheet" href="checkout-form.css" type="text/css">
+    <!-- PAGE TITLE -->
+    <link rel="icon" type="image/gif" href="../images/profile.png" />
+    <title>Payment| Igiti Corp</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <a href="../index.html"><img src="../images/fixed-logo.png" alt="logo" width="275" height="60"
+                    class="fixed-logo"></a>
+            <i class="fa fa-bars menu-toggle" id="menu-show" onclick="menu_show()"></i>
+            <!-- <i class="fas fa-window-close menu-toggle" id="menu-close" onclick="menu_hide()"></i> -->
+            <ul class="nav-bar showing" id="nav-bar">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../forestry.html">FORESTRY&nbsp;<i class="fas fa-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="#">Calculator</a></li>
+                        <li><a href="#">Species</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </li>
+                <li><a href="../store.html">STORE</a>
+                    <ul>
+                        <li><a href="order-summary.html">Cart</a></li>
+                        <li><a href="checkout.html">Checkout</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#"><i class="fas fa-user"></i>&nbsp;FEYTON <i class="fas fa-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="#">Dashboard</a> </li>
+                        <li class="logout"><a href="#">Logout</a></li>
+                    </ul>
+                </li>
+                <!-- <li style="position:absolute; float:right; right:0px">><a href="registration.html">ACCOUNT</a></li> -->
+            </ul>
+
+        </header>
+        <main>
+        <div class="col-lg-12 col-lg-8 form-div">
+            <form action="./success.html">
+                <div class="form-container">
+                    <div class="personal-information">
+                        <h1>Shipping Address Information</h1>
+                    </div> <!-- end of personal-information -->
+                    <div class="shipping">
+
+                        <input id="column-left" type="text" name="first_name" placeholder="First Name" />
+                        <input id="column-right" type="text" name="last_name" placeholder="Surname" />
+                        <input id="input-field" type="text" name="number" placeholder="Mobil"
+                            title="12-15 Mobile Number Digits" pattern="[0-9]" maxlength="15" />
+                        <select name="" id="" class="custom-select my-1 width-90">
+                            <option value="">Banana</option>
+                            <option value="">Banana2</option>
+                            <option value="">Banana</option>
+                        </select>
+
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="set_default_shipping"
+                                id="set_default_shipping">
+                            <label class="custom-control-label" for="set_default_shipping">Set as default
+                                address</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="use_default_shipping"
+                                id="use_default_shipping">
+                            <label class="custom-control-label" for="use_default_shipping">Set as default
+                                address</label>
+                        </div>
+                    </div>
+
+                    <div class="personal-information">
+                        <h1>Billing Address Information</h1>
+                    </div>
+                    <div class="billing">
+
+                        <input id="input-field" type="text" name="street_address" required="required" autocomplete="on"
+                            maxlength="45" placeholder="Street Address" />
+                        <input id="column-left" type="text" name="city" required="required" autocomplete="on"
+                            maxlength="20" placeholder="City" />
+                        <input id="column-right" type="text" name="district" required="required" autocomplete="on"
+                            maxlength="5" placeholder="District" />
+
+
+                        <input id="input-field" type="email" name="email" autocomplete="on" maxlength="40"
+                            placeholder="Contact Email" />
+
+                    </div>
+                    <div class="personal-information">
+                        <h1>Payment Option</h1>
+                    </div>
+                    <div class="radio-group">
+
+                        <label for="stripe" class="radio">
+                            <input type="radio" name="payment_option" id="stripe" value="S" required><img
+                                src="stripe.png" alt="">
+                            <span></span>
+                        </label>
+                        <label for="momo" class="radio">
+                            <input type="radio" name="payment_option" id="momo" value="M" required><img
+                                src="mtn_momo.png" alt="">
+                            <span></span>
+                        </label>
+                    </div>
+                    <input id="input-button" type="submit" value="PROCEED TO CHECKOUT" />
+                </div>
+
+            </form>
+        </div>
+        <div class="col-lg-12 col-lg-4">
+            <div class="summary">
+                <a href="../store.html" class="back-button"><i class="fas fa-reply-all"></i></a>
+                <h3>Summary</h3>
+                <div class="summary-item"><span class="text">Subtotal</span><span
+                        class="price">$360</span>
+                </div>
+                <div class="summary-item"><span class="text">Discount</span><span
+                        class="price">$0</span>
+                </div>
+                <div class="summary-item"><span class="text">Shipping</span><span
+                        class="price">$0</span>
+                </div>
+                <div class="summary-item"><span class="text">Total</span><span
+                        class="price">$360</span>
+                </div>
+                <a href="payment.html" class="btn btn-primary btn-lg btn-block">Checkout</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+</main>
+    <script src="../checkout/jquery-3.4.1.min.js"></script>
+</body>
+
+</html>

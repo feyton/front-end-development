@@ -1,10 +1,23 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,900,700,500);
-body {
-    padding: 60px 0;
-    background-color: rgba(178,209,229,0.7);
-    margin: 0 auto;
-    width: 600px;
-  }
+
+/* GENERAL DECLARATION */
+
+.text-center {
+    text-align: center;
+}
+.bordered {
+  border-radius: 5px;
+}
+
+.width-80 {
+  width: 80%;
+  margin: auto;
+}
+.width-90 {
+  width: 90%;
+}
+
+
     .body-text {
         padding: 0 20px 30px 20px;
         font-family: "Roboto";
@@ -13,7 +26,9 @@ body {
         text-align: center;
         line-height: 1.2em;
     }
-
+.form-div {
+    margin: 10px auto;
+}
     .form-container {
         flex-direction: column;
         justify-content: center;
@@ -28,10 +43,15 @@ body {
     }
 
     .personal-information {
-        background-color: #3C8DC5;
+        background-color: rgb(18, 38, 53);
         color: #fff;
         padding: 1px 0;
         text-align: center;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-radius: 5px;
     }
 
     h1 {
@@ -48,14 +68,14 @@ body {
     input[type="text"] {
         display: block;
         height: 50px;
-        width: 97%;
+        width: 100%;
         border: none;
     }
 
     input[type="email"] {
         display: block;
         height: 50px;
-        width: 97%;
+        width: 100%;
         border: none;
     }
 
@@ -74,21 +94,26 @@ body {
         cursor: pointer;
     }
 
-    input[type="submit"]:hover {
-        background-color: #6FB7E9;
-        transition: 0.3s ease;
-    }
 
     #column-left {
-        width: 46.8%;
+        width: 49%;
         float: left;
         margin-bottom: 2px;
     }
 
     #column-right {
-        width: 46.8%;
+        width: 50%;
         float: right;
     }
+#input-button {
+    background: rgb(53, 132, 189)
+}
+#input-button:hover {
+    
+    background: rgb(19, 126, 112);;
+    transition: 0.3s ease;
+
+}
 
     @media only screen and (max-width: 480px) {
         body {

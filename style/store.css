@@ -4,6 +4,9 @@ MAIN STORE
 :root {
     --main-color: #e74c3c;
 }
+
+
+
 .btn {
     padding: .4rem 1rem;
     background: rgba(12, 156, 149, 0.74);
@@ -12,6 +15,162 @@ MAIN STORE
     border-radius: .25rem;
     transition: 0.5s;
 }
+
+/* *****************
+STORE FRONT SLIDER 
+*******************/
+
+.product-wrapper {
+    width: 100%;
+    height: 500px;
+    margin: 0px auto;
+    padding: 10px 0px 10px 0px;
+    overflow: hidden;
+    position: relative;
+}
+.product-wrapper .post-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-image: url('../img/bg.jpg'); */
+    background-size: cover;
+}
+.product-wrapper .post-img:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(68, 36, 40, 0.7);
+    opacity: .6;
+}
+.product-wrapper .post .name {
+    position: relative;
+    height: 100px;
+    
+}
+.post .product-info{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    max-width: 910px;
+    width: 100%;
+    line-height: 1.4;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.product-info .name h1 {
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0px;
+    color: #fff;
+    text-transform: capitalize;
+    
+}
+.product-info p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+}
+.product-info .cart-button,
+.product-info .view-button {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    padding: 13px 25px;
+    font-size: 18px;
+    border-radius: 40px;
+    margin: 7px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+
+}
+.product-info .cart-button:hover,
+.product-info .view-button:hover {
+    opacity: 0.9;
+}
+
+.product-info .view-button {
+    color: rgba(34, 134, 151, 0.7);
+    background: #fff;
+}
+.product-info .cart-button {
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.9);
+    
+}
+.product-info .species-info {
+    margin-top: 25px;
+}
+
+.product-info .species-info a {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0px 6px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+
+
+
+.post-slider {
+    position: relative;
+}
+.next {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 2em;
+    color: cyan;
+    cursor: pointer;
+    z-index: 5;
+}
+.prev {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 2em;
+    color: cyan;
+    cursor: pointer;
+    z-index: 7;
+}
+.slider-image {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+.post-info {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    vertical-align: middle;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+
+/* // STORE FRONT */
+
+
+
 .product-container {
     display: block;
 }
